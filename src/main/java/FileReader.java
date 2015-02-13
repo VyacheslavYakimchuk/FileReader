@@ -1,14 +1,14 @@
+import java.io.IOException;
 
 /**
  * Created by TeSla on 11.02.2015.
  */
-public class FileReader {
+public class FileReader  {
 
-    public static void main(String[] args) {
-        //System.out.print(Editor.fileGetContents("D:\\Docs\\Notes.txt"));
+    public static void main(String[] args) throws IOException {
 
-        Editor.filePutContents("D:\\test.txt","test", false);
+        Editor editor = new Editor();
+        System.out.print(editor.fileGetContents("D:\\test.txt", true));
+
     }
-
-
 }
